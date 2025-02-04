@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.mobile-img, .desktop-img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .mobile-img {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .desktop-img {
+        display: block;
+    }
+}
